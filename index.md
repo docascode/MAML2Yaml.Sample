@@ -1,0 +1,1 @@
+# Welcome to maml2yaml_sample!
