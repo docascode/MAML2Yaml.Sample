@@ -4,6 +4,7 @@
       {
         "files": [ "**/*.md", "**/*.yml"],
         "src": "docs-conceptual",
+        "dest": "docs-conceptual",
         "version": "powershell-3.0"
       },
       {
@@ -23,7 +24,16 @@
       "extendBreadcrumb": true,
       "feedback_system": "None"
     },
-    "fileMetadata": {},
+    "fileMetadata": {
+      "ms.author": {
+        "**/*.yml": "qinzhu",
+        "**/*.md": "qinzhu"
+      },
+      "author": {
+        "**/*.yml": "qinezh",
+        "**/*.md": "qinezh"
+      }
+    },
     "template": [],
     "dest": "maml2yaml_sample",
     "markdownEngineName": "markdig",
