@@ -9,10 +9,21 @@
       "moniker_ranges": [],
       "open_to_public_contributors": true,
       "type_mapping": {
+        "PowershellModule": "Content",
+        "PowershellCmdlet": "Content",
         "Conceptual": "Content"
       },
+      "xref_query_tags": ["/dotnet"],
       "build_entry_point": "docs",
-      "template_folder": "_themes"
+      "template_folder": "_themes",
+      "customized_tasks": {
+        "docset_prebuild": [
+            "_dependentPackages/MAML2Yaml/tools/Run.ps1"
+        ]
+      },
+      "monikerPath": [
+        "mapping/monikerMapping.json"
+      ]
     }
   ],
   "notification_subscribers": [],
@@ -21,6 +32,15 @@
   "skip_source_output_uploading": false,
   "need_preview_pull_request": false,
   "contribution_branch_mappings": {},
+  "dependent_packages": [
+    {
+        "id": "Microsoft.DocAsCode.MAML2Yaml",
+        "nuget_feed": "https://www.myget.org/F/op/api/v2",
+        "path_to_root": "_dependentPackages/MAML2Yaml",
+        "target_framework": "net45",
+        "version": "latest"
+    }
+  ],
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
@@ -30,8 +50,5 @@
     }
   ],
   "branch_target_mapping": {},
-  "need_generate_pdf_url_template": false,
-  "docs_build_engine": {
-    "name": "docfx_v3"
-  }
+  "need_generate_pdf_url_template": false
 }

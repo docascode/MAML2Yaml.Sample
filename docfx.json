@@ -2,40 +2,20 @@
   "build": {
     "content": [
       {
-        "files": [
-          "**/*.md",
-          "**/*.yml"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**",
-          "_themes/**",
-          "_themes.pdf/**",
-          "**/docfx.json",
-          "_repo.en-us/**",
-          "README.md",
-          "LICENSE",
-          "LICENSE-CODE",
-          "ThirdPartyNotices.md"
-        ]
-      }
-    ],
-    "resource": [
+        "files": [ "**/*.md", "**/*.yml"],
+        "src": "docs-conceptual",
+        "version": "v1.0"
+      },
       {
-        "files": [
-          "**/*.png",
-          "**/*.jpg"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**",
-          "_themes/**",
-          "_themes.pdf/**",
-          "**/docfx.json",
-          "_repo.en-us/**"
-        ]
+        "files": [ "**/*.yml", "**/About/*.md"],
+        "src":"samples-v1.0",
+        "dest": "module",
+        "version": "v1.0"
       }
     ],
+    "versions": {
+      "v1.0": { "dest": "v1.0" }
+    },
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
@@ -46,6 +26,8 @@
     "fileMetadata": {},
     "template": [],
     "dest": "maml2yaml_sample",
-    "markdownEngineName": "markdig"
+    "markdownEngineName": "markdig",
+    "exportRawModel": true,
+    "exportViewModel": true
   }
 }

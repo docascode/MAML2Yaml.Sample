@@ -1,0 +1,9 @@
+{
+    "v1.0": {
+        "packageRoot": "samples-v1.0",
+        "conceptualToc": "docs-conceptual/toc.yml",
+        "conceptualTocUrl": "/maml2yaml_sample/docs-conceptual/toc.json",
+        "referenceTocUrl": "/maml2yaml_sample/module/toc.json",
+        "serviceMap": "mapping/serviceMapping.json"
+    }
+}
