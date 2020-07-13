@@ -4,17 +4,17 @@
       {
         "files": [ "**/*.md", "**/*.yml"],
         "src": "docs-conceptual",
-        "version": "v1.0"
+        "version": "powershell-3.0"
       },
       {
         "files": [ "**/*.yml", "**/About/*.md"],
         "src":"samples-v1.0",
         "dest": "module",
-        "version": "v1.0"
+        "version": "powershell-3.0"
       }
     ],
     "versions": {
-      "v1.0": { "dest": "v1.0" }
+      "powershell-3.0": { "dest": "powershell-3.0" }
     },
     "overwrite": [],
     "externalReference": [],
